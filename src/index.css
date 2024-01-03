@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajuste la hauteur pour centrer verticalement */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Style de la grille */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 5rem); /* 6 colonnes de 5rem chacune */
+  grid-template-rows: repeat(6, 5rem); /* 6 lignes de 5rem chacune */
+  gap: 5px; /* Espace entre les cellules */
+  width: 30rem; /* Largeur totale de la grille = 6 colonnes * 5rem */
+  margin: 0 auto; /* Centrer la grille horizontalement */
+}
+
+/* Style des cellules */
+.cell {
+  border: 1px solid #000; /* Bordure de la cellule */
+  width: 5rem; /* Largeur de la cellule */
+  height: 5rem; /* Hauteur de la cellule */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box; /* Inclure les bordures dans les dimensions */
+}
